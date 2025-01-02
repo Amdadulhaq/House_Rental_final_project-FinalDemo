@@ -23,13 +23,13 @@ import {
 
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyA2LC916BFUO-LHC25Gek0y595GxFQA0ds",
-    authDomain: "house-rentals-12c7d.firebaseapp.com",
-    projectId: "house-rentals-12c7d",
-    storageBucket: "house-rentals-12c7d.firebasestorage.app",
-    messagingSenderId: "38104073059",
-    appId: "1:38104073059:web:19f5fe83b6601f29474956",
-    measurementId: "G-54J13NNWH7"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
     
 };
 
