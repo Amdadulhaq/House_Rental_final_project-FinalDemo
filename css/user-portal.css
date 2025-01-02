@@ -1,0 +1,211 @@
+/* =======================
+   General Styling
+   ======================= */
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* =======================
+   Container Styling
+   ======================= */
+#user-portal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* =======================
+   Property Card Styling
+   ======================= */
+.property-card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.property-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.property-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.property-card p {
+    margin: 5px 0;
+}
+
+/* =======================
+   Button Styling
+   ======================= */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.btn-rent {
+    margin-top: 10px;
+    background-color: #28a745;
+}
+
+.btn-rent:hover {
+    background-color: #218838;
+}
+
+.btn-favorite {
+    margin-top: 10px;
+    background-color: #ff4757;
+}
+
+.btn-favorite:hover {
+    background-color: #e63946;
+}
+
+.btn-chat {
+    margin-top: 10px;
+    background-color: #3498db;
+}
+
+.btn-chat:hover {
+    background-color: #2f6d9c;
+}
+
+/* =======================
+   Search Bar Styling
+   ======================= */
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-container button {
+    margin-left: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-container button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* =======================
+   Responsive Design
+   ======================= */
+@media (max-width: 768px) {
+    .property-card {
+        padding: 15px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container button {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.property-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.property-card h3 {
+    margin-top: 0;
+}
+
+.btn-rent, .btn-favorite, .btn-chat {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-favorite.favorited {
+    color: gold;
+}
+
+.rented-status {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,109 @@
+/* =======================
+   General Styling
+   ======================= */
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* =======================
+   Sign-In Container
+   ======================= */
+#signin-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#signin-container h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* =======================
+   Form Styling
+   ======================= */
+#signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#signin-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#signin-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#signin-form button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#signin-form button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* =======================
+   Link Styling
+   ======================= */
+#signin-container .links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#signin-container .links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#signin-container .links a:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   Responsive Design
+   ======================= */
+@media (max-width: 768px) {
+    #signin-container {
+        padding: 20px;
+    }
+
+    #signin-form button {
+        width: 100%;
+    }
+}

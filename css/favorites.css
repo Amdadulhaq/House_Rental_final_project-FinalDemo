@@ -1,0 +1,108 @@
+/* =======================
+   General Styling
+   ======================= */
+   body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* =======================
+   Favorites Container
+   ======================= */
+#favorites-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================
+   Property Card Styling
+   ======================= */
+.favorite-card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.favorite-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-card h3 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+.favorite-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* =======================
+   Remove Button Styling
+   ======================= */
+.btn-remove-favorite {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    align-self: flex-start;
+}
+
+.btn-remove-favorite:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* =======================
+   No Favorites Message
+   ======================= */
+.no-favorites {
+    text-align: center;
+    color: var(--text-muted-color);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* =======================
+   Responsive Design
+   ======================= */
+@media (max-width: 768px) {
+    #favorites-container {
+        padding: 15px;
+    }
+
+    .favorite-card {
+        padding: 15px;
+    }
+
+    .btn-remove-favorite {
+        width: 100%;
+    }
+}

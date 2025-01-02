@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Rental Property Platform. Find your perfect property today.">
+    <title>Rental Property Platform</title>
+    <!-- Linking CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- JavaScript Files -->
+    <script defer src="js/app.js"></script>
+    <script defer src="js/theme.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+            <h1>Welcome to Hospitality Residential Rental Platform</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="html/signin.html">Login</a></li>
+                    <li><a href="html/signup.html">Create Account</a></li>
+                    <li><a href="html/profile.html">Profile</a></li>
+                    <li><a href="html/support.html">Support</a></li>
+                    <button id="theme-toggle">Switch to Dark Mode</button>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+
+        <div class="container">
+            <h2>An innovative user-freindly interface web app, designed for the best user-experience.</h2>
+            <p>A medium balanced solution. Explore, and come to an agreement from a wide range of propertie pricing featured.</p>
+            <a href="html/user-portal.html" class="btn btn-primary">Explore Properties</a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search listings...">
+            <span id="clear-button" onclick="clearSearch()">&#10005;</span>
+            <button id="search-button" onclick="performSearch()">
+                <img src="/images/search-icon.png" alt="Search">
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>What make as Innovative?</h2>
+
+            <div class="features-grid">
+
+                <div class="feature">
+                    <img src="/images/unique-home.jpg" alt="Unique homes">
+                    <h3>Unique Listings</h3>
+                    <p>Discover a world of unique living spaces, tailored to suit every lifestyle. Whether you're looking for the charm of a cozy apartment or the luxury of a spacious villa, our rentals offer distinct options that make you feel right at home. From urban hideaways to serene countryside escapes, find a place that’s as unique as you are.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="/images/local_culture.jpg" alt="Local experiences">
+                    <h3>Local experiences</h3>
+                    <p>Dive deep into the heart of each destination with experiences that go beyond typical sightseeing. Our rentals connect you to vibrant local communities, allowing you to explore authentic traditions, savor regional flavors, and feel the true spirit of the place. Immerse yourself in the local culture and make memories that capture the essence of each unique location.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="/images/options.jpg" alt="options">
+                    <h3>Balance</h3>
+                    <p>Whether it's a getaway with friends, a family gathering, or a group adventure, our flexible rental options make it easy to bring everyone along. Choose from a variety of accommodations designed to cater to groups of all sizes, ensuring everyone has a comfortable and memorable stay. Make shared memories in spaces that bring people together, any questions reach out to Support we're avalible to help. Safe Innovative Xxploration!</p>
+                </div>
+
+            </div>
+
+            <section class="call-to-action">
+                <h2>Ready to start your journey?</h2>
+                <div class="help-buttons">
+                    <button class="help-button active">Renting</button>
+                    <button class="help-button">Hosting</button>
+                    <button class="help-button"><a href="/html/signup.html">Create New Account</a></button>
+                </div>            
+            </section>
+
+        </div>
+    </section>
+
+    <section class="about_us">
+        <h2>About us</h2>
+        <p>Most rental websites, like those for short-term and long-term house leases, have set prices that can't be changed. Many people who want to rent may not be able to because of the rigid pricing system. This is especially true for people from low-income families or people who need a place to live quickly. In the same way, property owners may miss out on rental possibilities because they can't change their prices instantly based on demand and what renters want. The project's goal is to make a website that lets people renting homes negotiate prices on the fly. We want to make renting easier for people who are limited by money by adding a real-time negotiation tool. This will let them get properties that they might not be able to get otherwise. This feature will also help property owners because it will make it more likely that their homes will be rented quickly and easily, meeting last-minute needs, and getting the most usage. </p>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rental Property Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+
+</body>
+</html>
